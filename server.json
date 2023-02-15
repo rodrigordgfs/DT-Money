@@ -2,7 +2,7 @@
   "transactions": [
     {
       "id": "ff324513-9250-4b6b-805d-73462f9f5dc9",
-      "description": "Test transaction",
+      "description": "Ignite",
       "type": "income",
       "category": "salary",
       "price": 14000,
@@ -10,7 +10,7 @@
     },
     {
       "id": "aa29b2f7-4190-403e-851b-b035eaffb339",
-      "description": "Test transaction 1",
+      "description": "Hamburguer",
       "type": "outcome",
       "category": "food",
       "price": 123,
