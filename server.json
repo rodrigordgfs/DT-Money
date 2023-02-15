@@ -15,6 +15,22 @@
       "category": "food",
       "price": 123,
       "createdAt": "2020-01-02T19:12:43.000Z"
+    },
+    {
+      "description": "Teste",
+      "price": 125,
+      "category": "Teste",
+      "type": "outcome",
+      "createdAt": "2023-02-15T22:14:54.989Z",
+      "id": "-O5QSeq"
+    },
+    {
+      "description": "Meu",
+      "category": "qweqwe",
+      "price": 1233,
+      "type": "outcome",
+      "createdAt": "2023-02-15T22:30:03.093Z",
+      "id": "Lmks1xQ"
     }
   ]
 }
