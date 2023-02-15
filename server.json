@@ -5,7 +5,7 @@
       "description": "Test transaction",
       "type": "income",
       "category": "salary",
-      "price": 14587.87,
+      "price": 14000,
       "createdAt": "2020-01-01T19:12:43.000Z"
     },
     {
@@ -13,7 +13,7 @@
       "description": "Test transaction 1",
       "type": "outcome",
       "category": "food",
-      "price": 14587.87,
+      "price": 123,
       "createdAt": "2020-01-02T19:12:43.000Z"
     }
   ]
