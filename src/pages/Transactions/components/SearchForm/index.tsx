@@ -3,8 +3,9 @@ import { SearchFormContainer } from './styles'
 import { MagnifyingGlass } from 'phosphor-react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { useContext } from 'react'
 import { TransactionsContext } from '../../../../contexts/TransactionsContext'
+import { useContextSelector } from 'use-context-selector'
+import { memo } from 'react'
 
 const SearchFormSchema = z.object({
   query: z.string(),
@@ -12,8 +13,10 @@ const SearchFormSchema = z.object({
 
 type SearchFormInputs = z.infer<typeof SearchFormSchema>
 
-export function SearchForm() {
-  const { fetchTransactions } = useContext(TransactionsContext)
+function SearchFormComponent() {
+  const getTransactions = useContextSelector(TransactionsContext, (context) => {
+    return context.getTransactions
+  })
 
   const {
     register,
@@ -24,7 +27,7 @@ export function SearchForm() {
   })
 
   async function handleSearchTransactions(data: SearchFormInputs) {
-    await fetchTransactions(data.query)
+    await getTransactions(data.query)
   }
 
   return (
@@ -41,3 +44,5 @@ export function SearchForm() {
     </SearchFormContainer>
   )
 }
+
+export const SearchForm = memo(SearchFormComponent)

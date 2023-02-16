@@ -31,6 +31,14 @@
       "type": "outcome",
       "createdAt": "2023-02-15T22:30:03.093Z",
       "id": "Lmks1xQ"
+    },
+    {
+      "description": "Tamanho da bebida",
+      "category": "ttt",
+      "price": 555,
+      "type": "income",
+      "createdAt": "2023-02-15T22:41:04.378Z",
+      "id": "RXWdX5-"
     }
   ]
 }
